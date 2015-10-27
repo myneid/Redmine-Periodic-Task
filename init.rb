@@ -1,10 +1,12 @@
 require 'redmine'
 
-Redmine::Plugin.register :redmine_periodictask do
+Redmine::Plugin.register :periodictask do
   name 'Redmine Periodictask plugin'
-  author 'Tanguy de Courson'
-  description 'This is a plugin for Redmine that will allow you to schedule a task to be assigned on a schedule'
-  version '1.0.1'
+  author 'Julian Perelli based on work from Tanguy de Courson'
+  description 'This is a plugin for Redmine2 that will allow you to schedule a task to be assigned on a schedule'
+  version '3.1.0'
+  url 'http://github.com/jperelli/Redmine-Periodic-Task/'
+  author_url 'http://jperelli.com.ar/'
 
   project_module :periodictask do
     permission :periodictask, {:periodictask => [:index, :edit]}
